@@ -11,4 +11,6 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./data/da_symlinks:/data/srv/da_symlinks:ro
+      - ./data/da_symlinks:/srv/da_symlinks:ro
+      - ./data/da:/srv/da:ro
+      - ./data/pa:/srv/pa:ro
